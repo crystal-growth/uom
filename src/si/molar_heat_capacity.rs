@@ -88,6 +88,8 @@ quantity! {
             "kilocalorie (IT) per kelvin mole", "kilocalories (IT) per kelvin mole";
         @kilocalorie_per_kelvin_mole: 4.184_E3; "kcal/(K · mol)", "kilocalorie per kelvin mole",
             "kilocalories per kelvin mole";
+        @joule_per_kelvin_particle: 6.022_140_857e23; "J /(K ·  particle)", "joule per kelvin particle", "joules per kelvin particle";
+        @electronvolt_per_kelvin_particle:   6.022_140_857e23 *  1.602_176_634_E-19; "eV/(K · particle)", "electronvolt per kelvin particle", "electronvolts per kelvin particle";            
     }
 }
 
@@ -146,6 +148,10 @@ mod tests {
             test::<e::calorie_nutrition, t::kelvin, a::mole, m::calorie_nutrition_per_kelvin_mole>();
             test::<e::kilocalorie_it, t::kelvin, a::mole, m::kilocalorie_it_per_kelvin_mole>();
             test::<e::kilocalorie, t::kelvin, a::mole, m::kilocalorie_per_kelvin_mole>();
+
+            test::<e::joule, t::kelvin, a::particle, m::joule_per_kelvin_particle>();
+            test::<e::electronvolt, t::kelvin, a::particle, m::electronvolt_per_kelvin_particle>();
+
 
             fn test<E: e::Conversion<V>, T: t::Conversion<V>, A: a::Conversion<V>, M: m::Conversion<V>>() {
                 Test::assert_approx_eq(&MolarHeatCapacity::new::<M>(V::one()),
