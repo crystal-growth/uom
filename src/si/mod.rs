@@ -86,6 +86,7 @@ system! {
         molar_energy::MolarEnergy,
         molar_heat_capacity::MolarHeatCapacity,
         molar_mass::MolarMass,
+        molar_flux::MolarFlux,
         momentum::Momentum,
         power::Power,
         pressure::Pressure,
