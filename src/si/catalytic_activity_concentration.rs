@@ -274,8 +274,8 @@ quantity! {
         @femto_enzyme_unit_per_milliliter:
             prefix!(femto) * prefix!(micro) / 6.0_E1 / prefix!(milli) / prefix!(milli);
             "fU/mL", "femto enzyme unit per milliliter", "femto enzyme units per milliliter";
-        @particles_per_second_cubic_meter:
-            1.0/6.022_140_857e23; "particles · s⁻¹ · m⁻³", "particle per second cubic meter", "particles per second cubic meter";
+        @particle_per_second_cubic_meter:
+            1.0/6.022_140_76e23; "particles · s⁻¹ · m⁻³", "particle per second cubic meter", "particles per second cubic meter";
     }
 }
 
@@ -411,7 +411,7 @@ mod test {
             test::<ca::pico_enzyme_unit, v::milliliter, c::pico_enzyme_unit_per_milliliter>();
             test::<ca::femto_enzyme_unit, v::milliliter, c::femto_enzyme_unit_per_milliliter>();
 
-            test::<ca::particles_per_second, v::cubic_meter, c::particles_per_second_cubic_meter>();
+            test::<ca::particle_per_second, v::cubic_meter, c::particle_per_second_cubic_meter>();
 
             fn test<CA: ca::Conversion<V>, U: v::Conversion<V>, C: c::Conversion<V>>() {
                 Test::assert_approx_eq(&CatalyticActivityConcentration::new::<C>(V::one()),

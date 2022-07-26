@@ -43,6 +43,6 @@ quantity! {
         @yoctomole: prefix!(yocto); "ymol", "yoctomole", "yoctomoles";
         /// One elementary entity may be an atom, a molecule, an
         /// ion, an electron, any other particle or specified group of particles.
-        @particle: 1.0/6.022_140_857e23; "particle", "particle", "particles";
+        @particle: 1.0/6.022_140_76e23; "particle", "particle", "particles";
     }
 }

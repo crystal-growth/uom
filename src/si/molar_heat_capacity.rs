@@ -88,8 +88,8 @@ quantity! {
             "kilocalorie (IT) per kelvin mole", "kilocalories (IT) per kelvin mole";
         @kilocalorie_per_kelvin_mole: 4.184_E3; "kcal/(K · mol)", "kilocalorie per kelvin mole",
             "kilocalories per kelvin mole";
-        @joule_per_kelvin_particle: 6.022_140_857e23; "J /(K ·  particle)", "joule per kelvin particle", "joules per kelvin particle";
-        @electronvolt_per_kelvin_particle:   6.022_140_857e23 *  1.602_176_634_E-19; "eV/(K · particle)", "electronvolt per kelvin particle", "electronvolts per kelvin particle";            
+        @joule_per_kelvin_particle: 6.022_140_76e23; "J /(K ·  particle)", "joule per kelvin particle", "joules per kelvin particle";
+        @electronvolt_per_kelvin_particle:   6.022_140_76e23 *  1.602_176_634_E-19; "eV/(K · particle)", "electronvolt per kelvin particle", "electronvolts per kelvin particle";            
     }
 }
 

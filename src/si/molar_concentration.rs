@@ -144,20 +144,20 @@ quantity! {
             prefix!(femto) / prefix!(milli) / prefix!(milli);
             "fmol/mL", "femtomole per milliliter", "femtomoles per milliliter";
 
-        @particles_per_cubic_meter:
-            1.0/6.022_140_857e23;  
+        @particle_per_cubic_meter:
+            1.0/6.022_140_76e23;  
             "particles/m³", "particle per cubic meter", "particles per cubic meter";
-        @particles_per_cubic_decimeter:
-            1.0/6.022_140_857e23 / prefix!(deci) / prefix!(deci) / prefix!(deci);  
+        @particle_per_cubic_decimeter:
+            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(deci) / prefix!(deci);  
             "particles/dm³", "particle per cubic decimeter", "particles per cubic decimeter";    
-        @particles_per_liter:
-            1.0/6.022_140_857e23 / prefix!(milli);  
+        @particle_per_liter:
+            1.0/6.022_140_76e23 / prefix!(milli);  
             "particles/L", "particle per liter", "particles per liter";
-        @particles_per_deciliter:
-            1.0/6.022_140_857e23 / prefix!(deci) / prefix!(milli);  
+        @particle_per_deciliter:
+            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(milli);  
             "particles/dL", "particle per deciliter", "particles per deciliter";   
-        @particles_per_milliliter:
-            1.0/6.022_140_857e23 / prefix!(milli) / prefix!(milli);  
+        @particle_per_milliliter:
+            1.0/6.022_140_76e23 / prefix!(milli) / prefix!(milli);  
             "particles/mL", "particle per milliliter", "particles per milliliter";                                   
     }
 }
@@ -234,11 +234,11 @@ mod test {
             test::<aos::femtomole, v::milliliter, c::femtomole_per_milliliter>();
 
 
-            test::<aos::particle, v::cubic_meter, c::particles_per_cubic_meter>();
-            test::<aos::particle, v::cubic_decimeter, c::particles_per_cubic_decimeter>();
-            test::<aos::particle, v::liter, c::particles_per_liter>();
-            test::<aos::particle, v::deciliter, c::particles_per_deciliter>();
-            test::<aos::particle, v::milliliter, c::particles_per_milliliter>();
+            test::<aos::particle, v::cubic_meter, c::particle_per_cubic_meter>();
+            test::<aos::particle, v::cubic_decimeter, c::particle_per_cubic_decimeter>();
+            test::<aos::particle, v::liter, c::particle_per_liter>();
+            test::<aos::particle, v::deciliter, c::particle_per_deciliter>();
+            test::<aos::particle, v::milliliter, c::particle_per_milliliter>();
 
             fn test<AOS: aos::Conversion<V>, U: v::Conversion<V>, C: c::Conversion<V>>() {
                 Test::assert_approx_eq(&MolarConcentration::new::<C>(V::one()),

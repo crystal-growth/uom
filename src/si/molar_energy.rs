@@ -108,8 +108,8 @@ quantity! {
         @therm_us_per_mole: 1.054_804_E8; "thm/mol", "therm per mole", "therms per mole";
         @ton_tnt_per_mole: 4.184_E9; "t of TNT/mol", "ton of TNT per mole", "tons of TNT per mole";
         @watt_second_per_mole: 1.0_E0; "W · s/mol", "watt second per mole", "watt seconds per mole";
-        @joule_per_particle: 6.022_140_857e23; "J / particle", "joule per particle", "joules per particle";
-        @electronvolt_per_particle:  1.602_176_634_E-19 * 6.022_140_857e23; "eV/particle", "electronvolt per particle", "electronvolts per particle";
+        @joule_per_particle: 6.022_140_76e23; "J / particle", "joule per particle", "joules per particle";
+        @electronvolt_per_particle:  1.602_176_634_E-19 * 6.022_140_76e23; "eV/particle", "electronvolt per particle", "electronvolts per particle";
     }
 }
 
