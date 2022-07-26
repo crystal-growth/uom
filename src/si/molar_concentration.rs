@@ -145,20 +145,20 @@ quantity! {
             "fmol/mL", "femtomole per milliliter", "femtomoles per milliliter";
 
         @particle_per_cubic_meter:
-            1.0/6.022_140_76e23;  
+            1.0/6.022_140_76e23;
             "particles/m³", "particle per cubic meter", "particles per cubic meter";
         @particle_per_cubic_decimeter:
-            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(deci) / prefix!(deci);  
-            "particles/dm³", "particle per cubic decimeter", "particles per cubic decimeter";    
+            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(deci) / prefix!(deci);
+            "particles/dm³", "particle per cubic decimeter", "particles per cubic decimeter";
         @particle_per_liter:
-            1.0/6.022_140_76e23 / prefix!(milli);  
+            1.0/6.022_140_76e23 / prefix!(milli);
             "particles/L", "particle per liter", "particles per liter";
         @particle_per_deciliter:
-            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(milli);  
-            "particles/dL", "particle per deciliter", "particles per deciliter";   
+            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(milli);
+            "particles/dL", "particle per deciliter", "particles per deciliter";
         @particle_per_milliliter:
-            1.0/6.022_140_76e23 / prefix!(milli) / prefix!(milli);  
-            "particles/mL", "particle per milliliter", "particles per milliliter";                                   
+            1.0/6.022_140_76e23 / prefix!(milli) / prefix!(milli);
+            "particles/mL", "particle per milliliter", "particles per milliliter";
     }
 }
 

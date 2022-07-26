@@ -78,7 +78,8 @@ quantity! {
         @yocto_enzyme_unit: prefix!(yocto) * prefix!(micro) / 6.0_E1;
             "yU", "yocto enzyme unit", "yocto enzyme units";
 
-        @particle_per_second:   1.0/6.022_140_76e23; "particles/s" ,"particle_per_second", "particles_per_second";          
+        @particle_per_second:   1.0/6.022_140_76e23; "particles/s" ,"particle_per_second",
+            "particles_per_second";
     }
 }
 
