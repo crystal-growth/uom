@@ -274,9 +274,9 @@ quantity! {
         @femto_enzyme_unit_per_milliliter:
             prefix!(femto) * prefix!(micro) / 6.0_E1 / prefix!(milli) / prefix!(milli);
             "fU/mL", "femto enzyme unit per milliliter", "femto enzyme units per milliliter";
-        @particle_per_second_cubic_meter:
-            1.0/6.022_140_76e23; "particles · s⁻¹ · m⁻³", "particle per second cubic meter",
-                "particles per second cubic meter";
+
+        @particle_per_second_cubic_meter: 1.0_E0 / 6.022_140_76_E23; "particle · s⁻¹ · m⁻³",
+            "particle per second cubic meter", "particles per second cubic meter";
     }
 }
 

@@ -78,8 +78,8 @@ quantity! {
         @yocto_enzyme_unit: prefix!(yocto) * prefix!(micro) / 6.0_E1;
             "yU", "yocto enzyme unit", "yocto enzyme units";
 
-        @particle_per_second:   1.0/6.022_140_76e23; "particles/s" ,"particle_per_second",
-            "particles_per_second";
+        @particle_per_second: 1.0_E0 / 6.022_140_76_E23; "particle/s", "particle per second",
+            "particles per second";
     }
 }
 
@@ -142,7 +142,6 @@ mod tests {
             test::<aos::yoctomole, t::minute, ca::atto_enzyme_unit>();
 
             test::<aos::particle, t::second, ca::particle_per_second>();
-
 
             fn test<AOS: aos::Conversion<V>, T: t::Conversion<V>, CA: ca::Conversion<V>>() {
                 Test::assert_approx_eq(

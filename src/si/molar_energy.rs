@@ -91,7 +91,7 @@ quantity! {
         @calorie_it_nutrition_per_mole: 4.186_8_E3; "Cal (IT)/mol", "Calorie (IT) per mole",
             "Calories (IT) per mole";
         @calorie_nutrition_per_mole: 4.184_E3; "Cal/mol", "Calorie per mole", "Calories per mole";
-        @electronvolt_per_mole: 1.602_177_E-19; "eV/mol", "electronvolt per mole",
+        @electronvolt_per_mole: 1.602_176_634_E-19; "eV/mol", "electronvolt per mole",
             "electronvolts per mole";
         @erg_per_mole: 1.0_E-7; "erg/mol", "erg per mole", "ergs per mole";
         @foot_poundal_per_mole: 4.214_011_E-2; "ft · pdl/mol", "foot poundal per mole",
@@ -108,8 +108,11 @@ quantity! {
         @therm_us_per_mole: 1.054_804_E8; "thm/mol", "therm per mole", "therms per mole";
         @ton_tnt_per_mole: 4.184_E9; "t of TNT/mol", "ton of TNT per mole", "tons of TNT per mole";
         @watt_second_per_mole: 1.0_E0; "W · s/mol", "watt second per mole", "watt seconds per mole";
-        @joule_per_particle: 6.022_140_76e23; "J / particle", "joule per particle", "joules per particle";
-        @electronvolt_per_particle:  1.602_176_634_E-19 * 6.022_140_76e23; "eV/particle", "electronvolt per particle", "electronvolts per particle";
+
+        @joule_per_particle: 6.022_140_76_E23; "J/particle", "joule per particle",
+            "joules per particle";
+        @electronvolt_per_particle: 1.602_176_634_E-19 * 6.022_140_76_E23; "eV/particle",
+            "electronvolt per particle", "electronvolts per particle";
     }
 }
 
@@ -157,69 +160,68 @@ mod tests {
         #[test]
         fn check_derived_units() {
             test::<e::yottajoule, aos::mole, me::yottajoule_per_mole>();
-            test::<e::zettajoule,aos::mole, me::zettajoule_per_mole>();
-            test::<e::exajoule,aos::mole, me::exajoule_per_mole>();
-            test::<e::petajoule,aos::mole, me::petajoule_per_mole>();
-            test::<e::terajoule,aos::mole, me::terajoule_per_mole>();
-            test::<e::gigajoule,aos::mole, me::gigajoule_per_mole>();
-            test::<e::megajoule,aos::mole, me::megajoule_per_mole>();
-            test::<e::kilojoule,aos::mole, me::kilojoule_per_mole>();
-            test::<e::hectojoule,aos::mole, me::hectojoule_per_mole>();
-            test::<e::decajoule,aos::mole, me::decajoule_per_mole>();
-            test::<e::joule,aos::mole, me::joule_per_mole>();
-            test::<e::decijoule,aos::mole, me::decijoule_per_mole>();
-            test::<e::centijoule,aos::mole, me::centijoule_per_mole>();
-            test::<e::millijoule,aos::mole, me::millijoule_per_mole>();
-            test::<e::microjoule,aos::mole, me::microjoule_per_mole>();
-            test::<e::nanojoule,aos::mole, me::nanojoule_per_mole>();
-            test::<e::picojoule,aos::mole, me::picojoule_per_mole>();
-            test::<e::femtojoule,aos::mole, me::femtojoule_per_mole>();
-            test::<e::attojoule,aos::mole, me::attojoule_per_mole>();
-            test::<e::zeptojoule,aos::mole, me::zeptojoule_per_mole>();
-            test::<e::yoctojoule, aos::mole,me::yoctojoule_per_mole>();
+            test::<e::zettajoule, aos::mole, me::zettajoule_per_mole>();
+            test::<e::exajoule, aos::mole, me::exajoule_per_mole>();
+            test::<e::petajoule, aos::mole, me::petajoule_per_mole>();
+            test::<e::terajoule, aos::mole, me::terajoule_per_mole>();
+            test::<e::gigajoule, aos::mole, me::gigajoule_per_mole>();
+            test::<e::megajoule, aos::mole, me::megajoule_per_mole>();
+            test::<e::kilojoule, aos::mole, me::kilojoule_per_mole>();
+            test::<e::hectojoule, aos::mole, me::hectojoule_per_mole>();
+            test::<e::decajoule, aos::mole, me::decajoule_per_mole>();
+            test::<e::joule, aos::mole, me::joule_per_mole>();
+            test::<e::decijoule, aos::mole, me::decijoule_per_mole>();
+            test::<e::centijoule, aos::mole, me::centijoule_per_mole>();
+            test::<e::millijoule, aos::mole, me::millijoule_per_mole>();
+            test::<e::microjoule, aos::mole, me::microjoule_per_mole>();
+            test::<e::nanojoule, aos::mole, me::nanojoule_per_mole>();
+            test::<e::picojoule, aos::mole, me::picojoule_per_mole>();
+            test::<e::femtojoule, aos::mole, me::femtojoule_per_mole>();
+            test::<e::attojoule, aos::mole, me::attojoule_per_mole>();
+            test::<e::zeptojoule, aos::mole, me::zeptojoule_per_mole>();
+            test::<e::yoctojoule, aos::mole, me::yoctojoule_per_mole>();
 
-            test::<e::petawatt_hour,aos::mole, me::petawatt_hour_per_mole>();
-            test::<e::terawatt_hour,aos::mole, me::terawatt_hour_per_mole>();
-            test::<e::gigawatt_hour,aos::mole, me::gigawatt_hour_per_mole>();
-            test::<e::megawatt_hour,aos::mole, me::megawatt_hour_per_mole>();
-            test::<e::kilowatt_hour,aos::mole, me::kilowatt_hour_per_mole>();
-            test::<e::hectowatt_hour,aos::mole, me::hectowatt_hour_per_mole>();
-            test::<e::decawatt_hour,aos::mole, me::decawatt_hour_per_mole>();
-            test::<e::watt_hour,aos::mole, me::watt_hour_per_mole>();
-            test::<e::milliwatt_hour,aos::mole, me::milliwatt_hour_per_mole>();
-            test::<e::microwatt_hour,aos::mole, me::microwatt_hour_per_mole>();
+            test::<e::petawatt_hour, aos::mole, me::petawatt_hour_per_mole>();
+            test::<e::terawatt_hour, aos::mole, me::terawatt_hour_per_mole>();
+            test::<e::gigawatt_hour, aos::mole, me::gigawatt_hour_per_mole>();
+            test::<e::megawatt_hour, aos::mole, me::megawatt_hour_per_mole>();
+            test::<e::kilowatt_hour, aos::mole, me::kilowatt_hour_per_mole>();
+            test::<e::hectowatt_hour, aos::mole, me::hectowatt_hour_per_mole>();
+            test::<e::decawatt_hour, aos::mole, me::decawatt_hour_per_mole>();
+            test::<e::watt_hour, aos::mole, me::watt_hour_per_mole>();
+            test::<e::milliwatt_hour, aos::mole, me::milliwatt_hour_per_mole>();
+            test::<e::microwatt_hour, aos::mole, me::microwatt_hour_per_mole>();
 
-            test::<e::btu_it,aos::mole, me::btu_it_per_mole>();
-            test::<e::btu,aos::mole, me::btu_per_mole>();
-            test::<e::btu_39,aos::mole, me::btu_39_per_mole>();
-            test::<e::btu_59,aos::mole, me::btu_59_per_mole>();
-            test::<e::btu_60,aos::mole, me::btu_60_per_mole>();
-            test::<e::calorie_it,aos::mole, me::calorie_it_per_mole>();
-            test::<e::calorie,aos::mole, me::calorie_per_mole>();
-            test::<e::calorie_15,aos::mole, me::calorie_15_per_mole>();
-            test::<e::calorie_20,aos::mole, me::calorie_20_per_mole>();
-            test::<e::calorie_it_nutrition,aos::mole, me::calorie_it_nutrition_per_mole>();
-            test::<e::calorie_nutrition,aos::mole, me::calorie_nutrition_per_mole>();
-            test::<e::electronvolt,aos::mole, me::electronvolt_per_mole>();
-            test::<e::erg,aos::mole, me::erg_per_mole>();
-            test::<e::foot_poundal,aos::mole, me::foot_poundal_per_mole>();
-            test::<e::foot_pound,aos::mole, me::foot_pound_force_per_mole>();
-            test::<e::kilocalorie_it,aos::mole, me::kilocalorie_it_per_mole>();
-            test::<e::kilocalorie,aos::mole, me::kilocalorie_per_mole>();
-            test::<e::quad,aos::mole, me::quad_per_mole>();
-            test::<e::therm_ec,aos::mole, me::therm_ec_per_mole>();
-            test::<e::therm_us,aos::mole, me::therm_us_per_mole>();
-            test::<e::ton_tnt,aos::mole, me::ton_tnt_per_mole>();
-            test::<e::watt_second,aos::mole, me::watt_second_per_mole>();
+            test::<e::btu_it, aos::mole, me::btu_it_per_mole>();
+            test::<e::btu, aos::mole, me::btu_per_mole>();
+            test::<e::btu_39, aos::mole, me::btu_39_per_mole>();
+            test::<e::btu_59, aos::mole, me::btu_59_per_mole>();
+            test::<e::btu_60, aos::mole, me::btu_60_per_mole>();
+            test::<e::calorie_it, aos::mole, me::calorie_it_per_mole>();
+            test::<e::calorie, aos::mole, me::calorie_per_mole>();
+            test::<e::calorie_15, aos::mole, me::calorie_15_per_mole>();
+            test::<e::calorie_20, aos::mole, me::calorie_20_per_mole>();
+            test::<e::calorie_it_nutrition, aos::mole, me::calorie_it_nutrition_per_mole>();
+            test::<e::calorie_nutrition, aos::mole, me::calorie_nutrition_per_mole>();
+            test::<e::electronvolt, aos::mole, me::electronvolt_per_mole>();
+            test::<e::erg, aos::mole, me::erg_per_mole>();
+            test::<e::foot_poundal, aos::mole, me::foot_poundal_per_mole>();
+            test::<e::foot_pound, aos::mole, me::foot_pound_force_per_mole>();
+            test::<e::kilocalorie_it, aos::mole, me::kilocalorie_it_per_mole>();
+            test::<e::kilocalorie, aos::mole, me::kilocalorie_per_mole>();
+            test::<e::quad, aos::mole, me::quad_per_mole>();
+            test::<e::therm_ec, aos::mole, me::therm_ec_per_mole>();
+            test::<e::therm_us, aos::mole, me::therm_us_per_mole>();
+            test::<e::ton_tnt, aos::mole, me::ton_tnt_per_mole>();
+            test::<e::watt_second, aos::mole, me::watt_second_per_mole>();
 
             test::<e::joule, aos::particle, me::joule_per_particle>();
             test::<e::electronvolt, aos::particle, me::electronvolt_per_particle>();
 
-
-            fn test<E: e::Conversion<V>,  A: aos::Conversion<V>, ME: me::Conversion<V>>() {
+            fn test<E: e::Conversion<V>, AOS: aos::Conversion<V>, ME: me::Conversion<V>>() {
                 Test::assert_approx_eq(&MolarEnergy::new::<ME>(V::one()),
                     &(Energy::new::<E>(V::one())
-                        / AmountOfSubstance::new::<A>(V::one())));
+                        / AmountOfSubstance::new::<AOS>(V::one())));
             }
         }
     }

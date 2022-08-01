@@ -144,21 +144,17 @@ quantity! {
             prefix!(femto) / prefix!(milli) / prefix!(milli);
             "fmol/mL", "femtomole per milliliter", "femtomoles per milliliter";
 
-        @particle_per_cubic_meter:
-            1.0/6.022_140_76e23;
-            "particles/m³", "particle per cubic meter", "particles per cubic meter";
+        @particle_per_cubic_meter: 1.0_E0 / 6.022_140_76_E23; "particle/m³",
+            "particle per cubic meter", "particles per cubic meter";
         @particle_per_cubic_decimeter:
-            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(deci) / prefix!(deci);
-            "particles/dm³", "particle per cubic decimeter", "particles per cubic decimeter";
-        @particle_per_liter:
-            1.0/6.022_140_76e23 / prefix!(milli);
-            "particles/L", "particle per liter", "particles per liter";
-        @particle_per_deciliter:
-            1.0/6.022_140_76e23 / prefix!(deci) / prefix!(milli);
-            "particles/dL", "particle per deciliter", "particles per deciliter";
-        @particle_per_milliliter:
-            1.0/6.022_140_76e23 / prefix!(milli) / prefix!(milli);
-            "particles/mL", "particle per milliliter", "particles per milliliter";
+            1.0_E0 / 6.022_140_76_E23 / prefix!(deci) / prefix!(deci) / prefix!(deci);
+            "particle/dm³", "particle per cubic decimeter", "particles per cubic decimeter";
+        @particle_per_liter: 1.0_E0 / 6.022_140_76_E23 / prefix!(milli); "particle/L",
+            "particle per liter", "particles per liter";
+        @particle_per_deciliter: 1.0_E0 / 6.022_140_76_E23 / prefix!(deci) / prefix!(milli);
+            "particle/dL", "particle per deciliter", "particles per deciliter";
+        @particle_per_milliliter: 1.0_E0 / 6.022_140_76_E23 / prefix!(milli) / prefix!(milli);
+            "particle/mL", "particle per milliliter", "particles per milliliter";
     }
 }
 
@@ -232,7 +228,6 @@ mod test {
             test::<aos::nanomole, v::milliliter, c::nanomole_per_milliliter>();
             test::<aos::picomole, v::milliliter, c::picomole_per_milliliter>();
             test::<aos::femtomole, v::milliliter, c::femtomole_per_milliliter>();
-
 
             test::<aos::particle, v::cubic_meter, c::particle_per_cubic_meter>();
             test::<aos::particle, v::cubic_decimeter, c::particle_per_cubic_decimeter>();
