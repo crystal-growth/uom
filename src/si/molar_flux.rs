@@ -1,9 +1,9 @@
-//! Molar flux (base unit mole per second suqare meter, mol · s⁻¹ · m⁻²).
+//! Molar flux (base unit mole per square meter second, m⁻² · s⁻¹ · mol).
 
 quantity! {
-    /// Molar flux (base unit mole per second suqare meter, mol · s⁻¹ · m⁻²).
+    /// Molar flux (base unit mole per square meter second, m⁻² · s⁻¹ · mol).
     quantity: MolarFlux; "molar flux";
-    /// Dimension of molar flux, NT⁻¹L⁻² (base unit mole per second square meter, mol · s⁻¹ · m⁻²).
+    /// Dimension of molar flux, L⁻²T⁻¹N (base unit mole per square meter second, m⁻² · s⁻¹ · mol).
     dimension: ISQ<
         N2,     // length
         Z0,     // mass
@@ -13,8 +13,8 @@ quantity! {
         P1,     // amount of substance
         Z0>;    // luminous intensity
     units {
-        @mole_per_second_square_meter: prefix!(none); "mol/(s · m²)", "mole per second square meter", "moles per second square meter";
-
+        @mole_per_second_square_meter: prefix!(none); "mol/(s · m²)",
+            "mole per second square meter", "moles per second square meter";
     }
 }
 
@@ -27,7 +27,6 @@ mod test {
         use crate::si::quantities::*;
         use crate::si::time as t;
         use crate::si::area as area;
-
         use crate::tests::Test;
 
         #[test]
@@ -41,13 +40,11 @@ mod test {
         fn check_units() {
             test::<aos::mole, t::second, area::square_meter, mf::mole_per_second_square_meter>();
 
-
             fn test<N: aos::Conversion<V>, T: t::Conversion<V>, A: area::Conversion<V>, R: mf::Conversion<V>>() {
                 Test::assert_approx_eq(&MolarFlux::new::<R>(V::one()),
-                    &(AmountOfSubstance::new::<N>(V::one()) /
-                     Time::new::<T>(V::one()) /
-                    Area::new::<A>(V::one())
-                    ));
+                    &(AmountOfSubstance::new::<N>(V::one())
+                        / Time::new::<T>(V::one())
+                        / Area::new::<A>(V::one())));
             }
         }
     }
