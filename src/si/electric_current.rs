@@ -40,6 +40,8 @@ quantity! {
         @yoctoampere: prefix!(yocto); "yA", "yoctoampere", "yoctoamperes";
 
         @abampere: 1.0_E1; "abA", "abampere", "abamperes";
+        @elementary_charge_per_second: 1.602_176_634_E-19; "e/s",
+            "elementary charge per second", "elementary charges per second";        
         @gilbert: 7.957_747_E-1; "Gi", "gilbert", "gilberts";
         @statampere: 3.335_641_E-10; "statA", "statampere", "statamperes";
     }
