@@ -63,6 +63,7 @@ system! {
         electric_current::ElectricCurrent,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
+        electrical_mobility::ElectricalMobility,
         electrical_resistance::ElectricalResistance,
         energy::Energy,
         force::Force,
