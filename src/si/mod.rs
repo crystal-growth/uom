@@ -60,6 +60,7 @@ system! {
         curvature::Curvature,
         electric_charge::ElectricCharge,
         electric_current::ElectricCurrent,
+        electric_permittivity::ElectricPermittivity,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_resistance::ElectricalResistance,
