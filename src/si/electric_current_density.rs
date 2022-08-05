@@ -28,7 +28,6 @@ mod tests {
         use crate::si::electric_current as i;
         use crate::si::electric_current_density as ecd;
         use crate::si::quantities::*;
-        use crate::si::time as t;
         use crate::tests::Test;
 
         #[test]
