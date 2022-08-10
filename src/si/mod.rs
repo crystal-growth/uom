@@ -61,6 +61,7 @@ system! {
         diffusion_coefficient::DiffusionCoefficient,
         electric_charge::ElectricCharge,
         electric_current::ElectricCurrent,
+        electric_displacement_field::ElectricDisplacementField,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_resistance::ElectricalResistance,
