@@ -12,6 +12,7 @@ quantity! {
         Z0,     // thermodynamic temperature
         Z0,     // amount of substance
         Z0>;    // luminous intensity
+        kind: dyn (crate::si::marker::ConstituentConcentrationKind);
     units {
         @ampere_per_square_meter: prefix!(none); "A·m⁻²", "ampere per square meter", "amperes per square meter";
         @ampere_per_square_centimeter: prefix!(none) / prefix!(centi) / prefix!(centi); "A·cm⁻²", "ampere per square centimeter", "amperes per square centimeter";
@@ -32,8 +33,8 @@ mod tests {
 
         #[test]
         fn check_dimension() {
-            let _: ElectricCurrentDensity<V> = ElectricCurrent::new::<i::ampere>(V::one())
-                / Area::new::<a::square_meter>(V::one());
+            let _: ElectricCurrentDensity<V> = (ElectricCurrent::new::<i::ampere>(V::one())
+                / Area::new::<a::square_meter>(V::one())).into();
         }
 
         #[test]
@@ -45,7 +46,7 @@ mod tests {
 
             fn test<ECD: ecd::Conversion<V>, I: i::Conversion<V>, A: a::Conversion<V>>() {
                 Test::assert_approx_eq(&ElectricCurrentDensity::new::<ECD>(V::one()),
-                    &(ElectricCurrent::new::<I>(V::one()) / Area::new::<A>(V::one())));
+                    &(ElectricCurrent::new::<I>(V::one()) / Area::new::<A>(V::one())).into());
             }
         }
     }
