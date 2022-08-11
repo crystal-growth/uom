@@ -97,6 +97,7 @@ system! {
         specific_heat_capacity::SpecificHeatCapacity,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
+        temperature_gradient::TemperatureGradient,
         thermodynamic_temperature::ThermodynamicTemperature,
         time::Time,
         torque::Torque,
