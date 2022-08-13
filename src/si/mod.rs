@@ -94,6 +94,8 @@ system! {
         radiant_exposure::RadiantExposure,
         ratio::Ratio,
         solid_angle::SolidAngle,
+        specific_area::SpecificArea,
+        specific_volume::SpecificVolume,
         specific_heat_capacity::SpecificHeatCapacity,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
