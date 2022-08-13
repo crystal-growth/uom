@@ -75,6 +75,7 @@ system! {
         information_rate::InformationRate,
         jerk::Jerk,
         length::Length,
+        linear_power_density::LinearPowerDensity,
         luminance::Luminance,
         luminous_intensity::LuminousIntensity,
         magnetic_flux::MagneticFlux,
@@ -102,6 +103,7 @@ system! {
         torque::Torque,
         velocity::Velocity,
         volume::Volume,
+        volumetric_power_density::VolumetricPowerDensity,
         volume_rate::VolumeRate,
     }
 }
