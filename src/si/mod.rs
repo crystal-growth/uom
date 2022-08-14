@@ -95,6 +95,7 @@ system! {
         ratio::Ratio,
         solid_angle::SolidAngle,
         specific_heat_capacity::SpecificHeatCapacity,
+        temperature_coefficient::TemperatureCoefficient,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
         thermodynamic_temperature::ThermodynamicTemperature,
