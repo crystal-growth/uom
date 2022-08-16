@@ -53,6 +53,7 @@ system! {
         angular_jerk::AngularJerk,
         angular_velocity::AngularVelocity,
         area::Area,
+        areal_density_of_states::ArealDensityOfStates,
         available_energy::AvailableEnergy,
         capacitance::Capacitance,
         catalytic_activity::CatalyticActivity,
@@ -75,6 +76,7 @@ system! {
         information_rate::InformationRate,
         jerk::Jerk,
         length::Length,
+        linear_density_of_states::LinearDensityOfStates,
         luminance::Luminance,
         luminous_intensity::LuminousIntensity,
         magnetic_flux::MagneticFlux,
@@ -102,6 +104,7 @@ system! {
         torque::Torque,
         velocity::Velocity,
         volume::Volume,
+        volumetric_density_of_states::VolumetricDensityOfStates,
         volume_rate::VolumeRate,
     }
 }
