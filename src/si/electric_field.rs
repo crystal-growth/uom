@@ -43,6 +43,8 @@ mod test {
         use crate::si::electric_field as ef;
         use crate::si::quantities::*;
         use crate::si::electric_potential as ep;
+        use crate::si::energy as en;
+        use crate::si::electric_charge as ec;
         use crate::si::length as l;
         use crate::tests::Test;
 
@@ -71,5 +73,19 @@ mod test {
                         / Length::new::<L>(V::one())));
             }
         }
+
+        #[test]
+        fn check_units_eql() {
+            test::<en::joule, ec::coulomb, l::meter, ef::volt_per_meter>();
+            test::<en::hartree, ec::elementary_charge, l::bohr_radius, ef::atomic_unit_of_electric_field>();
+
+            fn test<EN: en::Conversion<V>, Q: ec::Conversion<V>, L: l::Conversion<V>, EF: ef::Conversion<V>>() {
+                Test::assert_approx_eq(&ElectricField::new::<EF>(V::one()),
+                    &(Energy::new::<EN>(V::one())
+                        / ElectricCharge::new::<Q>(V::one())
+                        / Length::new::<L>(V::one())));
+            }
+        }
+
     }
 }
