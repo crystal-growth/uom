@@ -89,6 +89,7 @@ system! {
         molar_heat_capacity::MolarHeatCapacity,
         molar_mass::MolarMass,
         momentum::Momentum,
+        moment_of_inertia::MomentOfInertia,
         power::Power,
         pressure::Pressure,
         radiant_exposure::RadiantExposure,
