@@ -80,6 +80,16 @@ quantity! {
 
         @particle_per_second: 1.0_E0 / 6.022_140_76_E23; "particle/s", "particle per second",
             "particles per second";
+        
+        @mole_per_second: prefix!(none); "mol/s", "mole per second", "moles per second";
+        @standard_centimeter_per_minute: 1_E5 * prefix!(micro) / 8.314_462_618 / 273.15 / 60.0; "sccm",
+            "standard centimeter per minute", "standard centimeters per minute";
+        @standard_liter_per_minute: 1_E5 * prefix!(milli) / 8.314_462_618 / 273.15 / 60.0; "slm",
+            "standard liter per minute", "standard liters per minute";
+        @standard_cubic_meter_per_minute: 1_E5 * prefix!(none) / 8.314_462_618 / 273.15 / 60.0; "m³(STP)/min",
+            "standard cubic meter per minute", "standard cubic meters per minute";
+        @standard_cubic_foot_per_minute: 1_E5 * 2.831_685_E-2 / 8.314_462_618 / 273.15 / 60.0; "scfm",
+            "standard cubic foot per hour", "standard cubic feet per hour";
     }
 }
 
@@ -142,6 +152,12 @@ mod tests {
             test::<aos::yoctomole, t::minute, ca::atto_enzyme_unit>();
 
             test::<aos::particle, t::second, ca::particle_per_second>();
+            test::<aos::mole, t::second, ca::mole_per_second>();
+            test::<aos::standard_centimeter, t::minute, ca::standard_centimeter_per_minute>();
+            test::<aos::standard_liter, t::minute, ca::standard_liter_per_minute>();
+            test::<aos::standard_cubic_foot, t::minute, ca::standard_cubic_foot_per_minute>();
+            test::<aos::standard_cubic_meter, t::minute, ca::standard_cubic_meter_per_minute>();
+
 
             fn test<AOS: aos::Conversion<V>, T: t::Conversion<V>, CA: ca::Conversion<V>>() {
                 Test::assert_approx_eq(
