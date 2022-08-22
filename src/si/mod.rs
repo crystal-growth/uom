@@ -65,6 +65,7 @@ system! {
         electric_charge::ElectricCharge,
         electric_current::ElectricCurrent,
         electric_field::ElectricField,
+        electric_dipole_moment::ElectricDipoleMoment,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_resistance::ElectricalResistance,
