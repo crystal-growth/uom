@@ -136,7 +136,6 @@ system! {
         volumetric_number_density::VolumetricNumberDensity,
         volumetric_number_rate::VolumetricNumberRate,
         volumetric_power_density::VolumetricPowerDensity,
->>>>>>> origin/add_power_density
         volume_rate::VolumeRate,
     }
 }
