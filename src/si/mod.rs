@@ -64,12 +64,9 @@ system! {
         dynamic_viscosity::DynamicViscosity,
         electric_charge::ElectricCharge,
         electric_current::ElectricCurrent,
-<<<<<<< HEAD
         electric_field::ElectricField,
         electric_dipole_moment::ElectricDipoleMoment,
-=======
         electric_permittivity::ElectricPermittivity,
->>>>>>> origin/add_electric_permittivity
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_mobility::ElectricalMobility,
