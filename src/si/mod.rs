@@ -68,6 +68,7 @@ system! {
         electric_dipole_moment::ElectricDipoleMoment,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
+        electrical_mobility::ElectricalMobility,
         electrical_resistance::ElectricalResistance,
         energy::Energy,
         force::Force,
