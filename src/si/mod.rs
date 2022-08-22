@@ -113,6 +113,7 @@ system! {
         reciprocal_length::ReciprocalLength,
         solid_angle::SolidAngle,
         specific_heat_capacity::SpecificHeatCapacity,
+        surface_electric_current_density::SurfaceElectricCurrentDensity,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
         thermodynamic_temperature::ThermodynamicTemperature,
