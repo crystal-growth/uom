@@ -95,6 +95,7 @@ system! {
         linear_number_density::LinearNumberDensity,
         linear_number_rate::LinearNumberRate,
         linear_mass_density::LinearMassDensity,
+        linear_power_density::LinearPowerDensity,
         luminance::Luminance,
         luminous_intensity::LuminousIntensity,
         magnetic_field_strength::MagneticFieldStrength,
@@ -132,6 +133,8 @@ system! {
         volume::Volume,
         volumetric_number_density::VolumetricNumberDensity,
         volumetric_number_rate::VolumetricNumberRate,
+        volumetric_power_density::VolumetricPowerDensity,
+>>>>>>> origin/add_power_density
         volume_rate::VolumeRate,
     }
 }
