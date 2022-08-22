@@ -64,6 +64,7 @@ system! {
         dynamic_viscosity::DynamicViscosity,
         electric_charge::ElectricCharge,
         electric_current::ElectricCurrent,
+        electric_field::ElectricField,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_resistance::ElectricalResistance,
