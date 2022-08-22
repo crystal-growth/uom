@@ -74,6 +74,7 @@ system! {
         electric_permittivity::ElectricPermittivity,
         electric_current_density::ElectricCurrentDensity,
         electric_displacement_field::ElectricDisplacementField,
+        electric_flux::ElectricFlux,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_mobility::ElectricalMobility,
