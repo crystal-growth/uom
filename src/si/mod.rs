@@ -69,6 +69,7 @@ system! {
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_mobility::ElectricalMobility,
+        electrical_conductivity::ElectricalConductivity,
         electrical_resistance::ElectricalResistance,
         electrical_resistivity::ElectricalResistivity,
         energy::Energy,
