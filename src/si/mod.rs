@@ -67,6 +67,7 @@ system! {
         electric_field::ElectricField,
         electric_dipole_moment::ElectricDipoleMoment,
         electric_permittivity::ElectricPermittivity,
+        electric_current_density::ElectricCurrentDensity,
         electric_potential::ElectricPotential,
         electrical_conductance::ElectricalConductance,
         electrical_mobility::ElectricalMobility,
