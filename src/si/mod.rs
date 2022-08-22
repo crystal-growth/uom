@@ -95,6 +95,7 @@ system! {
         magnetic_flux::MagneticFlux,
         magnetic_flux_density::MagneticFluxDensity,
         magnetic_permeability::MagneticPermeability,
+        magnetic_moment::MagneticMoment,
         mass::Mass,
         mass_concentration::MassConcentration,
         mass_density::MassDensity,
