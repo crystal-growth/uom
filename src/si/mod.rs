@@ -117,6 +117,7 @@ system! {
         molar_mass::MolarMass,
         molar_volume::MolarVolume,
         momentum::Momentum,
+        moment_of_inertia::MomentOfInertia,
         power::Power,
         pressure::Pressure,
         radiant_exposure::RadiantExposure,
