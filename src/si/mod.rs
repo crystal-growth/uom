@@ -124,6 +124,7 @@ system! {
         surface_electric_current_density::SurfaceElectricCurrentDensity,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
+        temperature_gradient::TemperatureGradient,
         thermodynamic_temperature::ThermodynamicTemperature,
         time::Time,
         torque::Torque,
