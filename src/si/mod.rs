@@ -55,6 +55,7 @@ system! {
         angular_velocity::AngularVelocity,
         area::Area,
         areal_number_density::ArealNumberDensity,
+        areal_number_rate::ArealNumberRate,
         available_energy::AvailableEnergy,
         capacitance::Capacitance,
         catalytic_activity::CatalyticActivity,
@@ -86,6 +87,7 @@ system! {
         jerk::Jerk,
         length::Length,
         linear_number_density::LinearNumberDensity,
+        linear_number_rate::LinearNumberRate,
         luminance::Luminance,
         luminous_intensity::LuminousIntensity,
         magnetic_flux::MagneticFlux,
@@ -117,6 +119,7 @@ system! {
         velocity::Velocity,
         volume::Volume,
         volumetric_number_density::VolumetricNumberDensity,
+        volumetric_number_rate::VolumetricNumberRate,
         volume_rate::VolumeRate,
     }
 }
