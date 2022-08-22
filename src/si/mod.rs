@@ -125,6 +125,7 @@ system! {
         specific_volume::SpecificVolume,
         specific_heat_capacity::SpecificHeatCapacity,
         surface_electric_current_density::SurfaceElectricCurrentDensity,
+        temperature_coefficient::TemperatureCoefficient,
         temperature_interval::TemperatureInterval,
         thermal_conductivity::ThermalConductivity,
         temperature_gradient::TemperatureGradient,
