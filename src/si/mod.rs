@@ -70,6 +70,7 @@ system! {
         electrical_conductance::ElectricalConductance,
         electrical_mobility::ElectricalMobility,
         electrical_resistance::ElectricalResistance,
+        electrical_resistivity::ElectricalResistivity,
         energy::Energy,
         force::Force,
         frequency::Frequency,
