@@ -48,11 +48,10 @@ quantity! {
         @microampere_hour: 3.6_E-3; "µA · h", "microampere hour", "microampere hours";
 
         /// Electric charge carried by a single proton.
+        @elementary_charge: 1.602_176_634_E-19; "e", "elementary charge", "elementary charges";
         @atomic_unit_of_charge: 1.602_176_634_E-19; "a.u. of charge", "atomic unit of charge",
             "atomic units of charge";
         @abcoulomb: 1.0_E1; "abC", "abcoulomb", "abcoulombs";
-        @elementary_charge: 1.602_176_634_E-19; "e",
-            "elementary charge", "elementary charges";
         @faraday: 9.648_531_E4; "F", "faraday", "faradays";
         @franklin: 3.335_641_E-10; "Fr", "franklin", "franklins";
         @statcoulomb: 3.335_641_E-10; "statC", "statcoulomb", "statcoulombs";
